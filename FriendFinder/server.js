@@ -34,7 +34,7 @@ app.get(/\/(([\w]+)\.(html|css))$/, function(req, res, next) {
     );
   });
 
-
+require('./app/routing/apiRoutes.js')(app);
 require('./app/routing/htmlRoutes.js')(app);
 
 
