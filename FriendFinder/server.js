@@ -27,15 +27,13 @@ app.get(/\/(([\w]+)\.(html|css))$/, function(req, res, next) {
       function(err) {
         if (err) {
           next(err);
-        } else {
-          console.log("Sent:", fileName);
         }
       }
     );
   });
 
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 
 

@@ -33,7 +33,7 @@
         <form>
             <div>
                 <h5 class="display-5">I love outdoor activities</h5>
-                <select id="question1" class="form-control">
+                <select id="option" class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -44,7 +44,7 @@
             </div>
             <div>
                 <h5 class="display-5">I love cats</h5>
-                <select id="question2" class="form-control">
+                <select id="option" class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -55,7 +55,7 @@
             </div>
             <div>
                 <h5 class="display-5">I love dogs</h5>
-                <select id="question3" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -66,7 +66,7 @@
             </div>
             <div>
                 <h5 class="display-5">I'm a home-body</h5>
-                <select id="question4" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -77,7 +77,7 @@
             </div>
             <div>
                 <h5 class="display-5">Left twix is better than right Twix</h5>
-                <select id="question5" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -88,7 +88,7 @@
             </div>
             <div>
                 <h5 class="display-5">I love to travel</h5>
-                <select id="question6" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -99,7 +99,7 @@
             </div>
             <div>
                 <h5 class="display-5">I prefer to be up in mountains than down at the beach</h5>
-                <select id="question7" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -110,7 +110,7 @@
             </div>
             <div>
                 <h5 class="display-5">I prefer to go to the movies than rent a movie</h5>
-                <select id="question8" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -121,7 +121,7 @@
             </div>
             <div>
                 <h5 class="display-5">I prefer Coke over Pepsi</h5>
-                <select id="question9" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -132,7 +132,7 @@
             </div>
             <div>
                 <h5 class="display-5">I believe in love at first sight</h5>
-                <select id="question10" class="form-control">
+                <select class="form-control">
                     <option></option>
                     <option>1</option>
                     <option>2</option>
@@ -141,32 +141,22 @@
                     <option>5</option>
                 </select>
             </div>
-
-            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            <div>
+                <h5 class="display-5">I rather read a book than watch a movie</h5>
+                <select class="form-control">
+                    <option></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="mySubmit">Submit</button>
         </form>
     </div>
     <script type="text/javascript">
 
-        $("#submit").on("click", function(event){
-            event.preventDefault();
-            var userData = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                score: [
-                    $("#question1").val(),
-                    $("#question2").val(),
-                    $("#question3").val(),
-                    $("#question4").val(),
-                    $("#question5").val(),
-                    $("#question6").val(),
-                    $("#question7").val(),
-                    $("#question8").val(),
-                    $("#question9").val(),
-                    $("#question10").val(),
-                ]
-            };
-            console.log(userData);
-        });
     </script>
 </body>
 
